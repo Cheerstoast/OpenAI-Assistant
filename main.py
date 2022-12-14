@@ -63,7 +63,7 @@ def get_html(url):
   else:
     text = ""
   return text
-
+print('\033[2J',end='')
 while 1:
   answers = []
   question = input(white + "> ")
