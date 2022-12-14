@@ -11,9 +11,13 @@ https://replit.com/@markzhere/OpenAI-Assistant
 ### Install necessary python modules:
 
     pip3 install openai bs4 requests
-### After that, build the program. First get the ZIP from replit, unzip it, and then delete the zip file.
+### Afer that, build the program. First get the ZIP from github, unzip it, and then delete the zip file. 
 
-    curl -s -LO https://replit.com/@markzhere/OpenAI-Assistant.zip -o OpenAI-Assistant.zip && unzip OpenAI-Assistant.zip && rm OpenAI-Assistant.zip
-### To run the program, just run
 
-    python3 OpenAI-Assistant/main.py
+    curl -s -LO https://github.com/Cheerstoast/OpenAI-Assistant/archive/refs/heads/main.zip -o main.zip && unzip main.zip && rm main.zip
+### To run the program, navigate to the OpenAI-Assistant-main folder first.
+ 
+    cd OpenAI-Assistant-main/
+### Then run.
+
+    python3 main.py
