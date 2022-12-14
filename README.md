@@ -5,6 +5,8 @@ It can access the internet and use developed AI to get answers.
 Powered by OpenAI. Credits to @ZacharyWitten for the original functions.
 Why, yes, this program uses my OpenAI API key, but the key is encrypted and stored outside of the code.
 
+## Run online:
+https://replit.com/@markzhere/OpenAI-Assistant
 ## If you want to launch OpenAI Assistant locally on your machine:
 ### Install necessary python modules:
 
