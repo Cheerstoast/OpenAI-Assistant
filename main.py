@@ -40,15 +40,23 @@ AI: The answer is:
 chat_log = ''
 
 def predict(chat_log):
-  response = completion.create(engine="text-davinci-003",
-                               prompt=chat_log,
-                               temperature=0.0,
-                               max_tokens=250,
-                               top_p=1.0,
-                               frequency_penalty=0.0,
-                               presence_penalty=-0.6)
-  answer = response.choices[0].text.strip()
-  return answer
+  try:
+    response = completion.create(engine="text-davinci-003",
+                                 prompt=chat_log,
+                                 temperature=0.0,
+                                 max_tokens=250,
+                                 top_p=1.0,
+                                 frequency_penalty=0.0,
+                                 presence_penalty=-0.6)
+    answer = response.choices[0].text.strip()
+    return answer
+  except openai.error.RateLimitError:
+    input("Rate limit amount exceeded... Try again later, okay?")
+  except openai.error.APIError:
+    print(" OpenAI server reconnecting... please wait ",end='\r')
+    sleep(2)
+    print(" ",end='\r')
+    return predict(chat_log)
 
 questions, answers = [], []
 
