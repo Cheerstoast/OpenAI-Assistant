@@ -58,7 +58,6 @@ def predict(chat_log):
     sleep(2)
     print(" ",end='\r')
     return predict(chat_log)
-
 questions, answers = [], []
 
 def get_google_search_url(response):
@@ -73,6 +72,7 @@ def get_html(url):
     text = ""
   return text
 print('\033[2J',end='')
+
 while 1:
   answers = []
   question = input(white + "> ")
@@ -88,5 +88,5 @@ while 1:
     html)
   answer = predict(chat_log)
   answers[-1] = answer
-  print(f"{green}\n{answer}\n")
+  print(f"                                           \n{green}{answer}\n")
   chat_log = ''
