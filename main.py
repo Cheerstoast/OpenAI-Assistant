@@ -1,6 +1,7 @@
 import openai
 from bs4 import BeautifulSoup
 import requests
+from time import sleep
 
 green = '\033[1;92m'
 white = '\033[0m'
