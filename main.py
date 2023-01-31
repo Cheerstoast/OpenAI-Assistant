@@ -7,7 +7,7 @@ green = '\033[1;92m'
 reset = '\033[0m'
 
 # OpenAI API key here
-# Get one at https://beta.openai.com/account/api_keys
+# Get one at https://beta.openai.com/account/api-keys
 api_key = ''
 
 if not api_key:
