@@ -2,8 +2,10 @@
 
 A minimalist assistant that answers any question.
 It can access the internet and use developed AI to get answers.
-Powered by OpenAI. Credits to @ZacharyWitten for the original functions.
-Why, yes, this program uses my OpenAI API key, but the key is encrypted and stored outside of the code.
+Powered by OpenAI.
+
+Needs an OpenAI api key. Input one into the code to work.
+You could get one at https://beta.openai.com/account/api_keys
 
 ## Run online:
 https://replit.com/@markzhere/OpenAI-Assistant
