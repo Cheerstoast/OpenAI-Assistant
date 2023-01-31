@@ -5,7 +5,7 @@ It can access the internet and use developed AI to get answers.
 Powered by OpenAI.
 
 Needs an OpenAI api key. Input one into the code to work.
-You could get one at https://beta.openai.com/account/api_keys
+You could get one at https://beta.openai.com/account/api-keys
 
 ## Run online:
 https://replit.com/@markzhere/OpenAI-Assistant
